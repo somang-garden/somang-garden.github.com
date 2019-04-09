@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>{{ page.title }} | 소망의 동산</title>
+
+  <link href="{{ site.url }}/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{ site.url }}/css/blog-post.css" rel="stylesheet">
+
+</head>
+
+<body>
+<div style="min-height: calc(100vh - 229px + 53px);">
+  <!-- Navigation -->
+  {% include nav.html %}
+
+  <div class="container" style="padding: 24px;">
+    <h1 class="display-4">후원 내역</h1>
+    <hr>
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="mt-4">{{ page.title }}</h1>
+        <p class="lead">Posted on {{ page.date }}</p>
+        <hr>
+        {{ content }}
+        <hr>
+        <button class="btn btn-primary float-right mb-2" onclick="history.back()">뒤로</button>
+      </div>
+    </div>
+  </div>
+  
+</div>
+  <!-- Footer -->
+  {% include footer.html %}
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{{ site.url }}/vendor/jquery/jquery.min.js"></script>
+  <script src="{{ site.url }}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

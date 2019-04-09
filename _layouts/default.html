@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>{{ page.title }} | 소망의 동산</title>
+
+  <link href="{{ site.url }}/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{ site.url }}/css/full-width-pics.css" rel="stylesheet">
+
+</head>
+
+<body>
+<div style="min-height: calc(100vh - 229px + 53px);">
+  <!-- Navigation -->
+  {% include nav.html %}
+
+  {{ content }}
+</div>
+  <!-- Footer -->
+  {% include footer.html %}
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{{ site.url }}/vendor/jquery/jquery.min.js"></script>
+  <script src="{{ site.url }}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
