@@ -13,4 +13,6 @@ body {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+
+  box-shadow: 0px 2px 4px #cccccc;
 }

@@ -6,7 +6,7 @@ title: 후원 내역
 
 </style>
 
-<header class="py-5 bg-image-full text-center" style="background-image: url('https://unsplash.it/1900/1080?image=1076');">
+<header class="py-5 bg-image-full text-center" style="background-image: url('/img/index-1.webp');">
   <div class="wfh-header-bg">
     <h1 class="display-4"><small style="color: #cccccc;">사회복지법인</small><br><b>희망복지재단</b></h1>
     <hr style="width: 50%; border-color: #cccccc;">
@@ -29,7 +29,17 @@ title: 후원 내역
         <tr>
           <th scope="row">{{ forloop.index }}</th>
           <td><a href="{{ post.url }}">{{ post.title }}</a></td>
-          <td>{{ post.date }}</td>
+          <td>{{ post.date | date: '%Y-%m-%d'}}
+              {% assign dow = post.date | date: '%A' %}
+              {% case dow %}
+                {% when 'Sunday' %} {{'(일)'}}
+                {% when 'Monday' %} {{'(월)'}}
+                {% when 'Tuesday' %} {{'(화)'}}
+                {% when 'Wednesday' %} {{'(수)'}}
+                {% when 'Thursday' %} {{'(목)'}}
+                {% when 'Friday' %} {{'(금)'}}
+                {% when 'Saturday' %} {{'(토)'}}
+              {% endcase %}</td>
         </tr>
         {% endfor %}
       </tbody>
