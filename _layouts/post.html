@@ -5,6 +5,12 @@
 
   {% include inner-head.html %}
 
+  <style>
+    th, td {
+      white-space: nowrap;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -12,7 +18,7 @@
   <!-- Navigation -->
   {% include nav.html %}
 
-  <header class="py-5 bg-image-full text-center" style="background-image: url('/img/index-1.webp');">
+  <header class="py-5 bg-image-full text-center" style="background-image: url('/img/index-1.png');">
     <div class="wfh-header-bg">
       <h1 class="display-4"><small style="color: #cccccc;">사회복지법인</small><br><b>희망복지재단</b></h1>
       <hr style="width: 50%; border-color: #cccccc;">
@@ -20,7 +26,7 @@
     </div>
   </header>
 
-  <div class="container" style="padding: 24px;">
+  <div class="container py-4">
     <div class="row">
       <div class="col-lg-12">
         <h1 class="mt-4">{{ page.title }}</h1>
